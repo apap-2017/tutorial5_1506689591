@@ -37,7 +37,7 @@ public class CourseController {
     {
         CourseModel course = courseDAO.selectCourse (id);
 
-        if (id != null) {
+        if (course != null) {
             model.addAttribute ("course", course);
             return "view-course";
         } else {
